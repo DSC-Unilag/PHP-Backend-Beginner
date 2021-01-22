@@ -1,0 +1,15 @@
+# Week one assignment
+
+* Create variables to store your name, age and country. Echo these variables.
+* Using the variables created, make a sentence that says:
+	"My name is *name*. I am *age* years old. I'm from *country*. I love PHP"
+* Define a constant called "population" with a value of 18,000,000 and echo it.
+* Echo the data type of the following:
+	- "Bolanle"
+	- 287
+	- 28.7
+	- false
+* Given that $x = 108 and $y = 54. Echo:
+	- The sum of $x and $y
+	- The product of the square of $x and half of $y
+	- The remainder what $x id divided by $y
