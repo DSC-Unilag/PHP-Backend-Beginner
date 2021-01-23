@@ -23,7 +23,7 @@
     echo gettype(false);
 
 
-    // Question 2
+    // Question 5
     $x = 108;
     $y = 54;
     $squareX = $x ** 2;
