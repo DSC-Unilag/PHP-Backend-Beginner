@@ -2,9 +2,10 @@
 $name = "MasterCraft";
 $age = 20;
 $country = "Nigeria";
-$sentence = "My name is $name. I am " . ($age > 1) ? "$age years" : "$age year" . " old. I'm from $country. I love PHP";
+$sentence = "My name is $name. I am $age years old. I'm from $country. I love PHP";
+echo $sentence;
 
-define ("population", 18,000,000);
+define ("population", 18000000);
 echo population;
 
 echo gettype("Bolanle");
