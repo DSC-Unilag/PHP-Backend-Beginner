@@ -1,0 +1,13 @@
+# Week 2 Assignments
+
+1. Create an array of multiples of 5 from 125 to 800
+2. Print the array from question 1
+3. Print the 17th, 23rd and 48th item of the array from question 1 in the format: "The 17th item is $17th and the 23rd item is $23rd and the 48th item is $48th".
+4. Echo the number of elements in the array from question 1
+5. Echo the sum of the elements in the array from question 1
+6. Randomize the array, using shuffle and print the 17th, 23rd and 48th items again in the format used in question 3
+7. Create an associative array that stores your top 5 favorite football players and their jersey number.
+8. Sort the array created in question 7 by the keys of the array.
+
+# I guess that's all I can come up with now
+# Enjoy :smile
