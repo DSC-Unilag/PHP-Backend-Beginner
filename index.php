@@ -18,6 +18,10 @@
   //          in the format:
   //          "The 17th item is $17th and the 23rd item is $23rd and the 48th item is $48th".
   
+  # since we count arrays from index 0 (0 as 1st item),
+  ## 17th item will be in index 16,
+  ## 23rd item will be in index 22, and
+  ## 48th item will be in index 47. so...
   echo "The 17th item is $multiple_array_of_5[16] and the 23rd item is $multiple_array_of_5[22] and the 48th item is $multiple_array_of_5[47]";
   
   line_br();
@@ -37,14 +41,15 @@
   // Task #6: Randomize the array,
   //          using shuffle and print the 17th, 23rd and 48th items again in the format used in question 3
   
-  shuffle($multiple_array_of_5); # let's shuffle the numbers first, then
+  # let's shuffle the numbers first, then...
+  shuffle($multiple_array_of_5); 
   
   echo "The 17th item is $multiple_array_of_5[16] and the 23rd item is $multiple_array_of_5[22] and the 48th item is $multiple_array_of_5[47]";
   
   line_br();
 
   // Task #7: Create an associative array that stores your top 5 favorite football players and their jersey number.
-  # Hmm... I have no idea since I'm not the football fan by the way, but okay...
+  # hmm... I have no idea since I'm not the football fan by the way, but okay...
   $football_players = array(
     "Johan Cruyff" => 14,
     "Alan Shearer" => 9,
