@@ -1,98 +1,95 @@
 <?php
 
-	// To output data
-	echo "Hello World! <br>";
+	$spaces = "<br><br><br>";
+	
+	// Data types
+	$string = "Boy is a verb";
+	$int = 8;
 
-	// Comments
-	// Single-line comments
-	# Single-line comments
-	/*
-		Name: Application
-		Function: To process all payments in the app
-	*/	
+	// Creating Arrays
+	$students = ["Myself", "Yusuf", "Dimas", "Somto", "Bayo", "Caleb"];
 
-	// Variables
-	$name = "Zubair";
+	$students[] = "Agba";
+	// $students[] = "Temi";
 
-	$Zubair = "Test <br><br>";
+	// $students[2] = "Boy";
 
-	// $name = "Kunle";
+	// $students = array("Boy 1", "Boy 2");
 
-	// Variable variables
-	$anotherName = $$name;
+	print_r($students);
 
-	// Outputting variables
-	echo $anotherName;
+	// echo $students;
 
-	// Constant
-	define('RATE', 0.2);
+	// Instead of
+	// $numbers = [0, 1, 2, 3, 4, 5];
 
-	// No redefining constants
-	// RATE = 0.4;
+	// Do this
+	$numbers = range(0, 100, 2);
 
-	/*
-		DATA TYPES
-	*/
-	// Strings
-	$note = "I love you";
-	$note2 = 'I love you too';
-	$note3 = '3';
+	// Using range
+	$letters = range("a", "j", 2);
 
-	// String concatenation
-	echo "Bola said: " . $note . ". Then Tayo replied: " . 
-		$note2 . " " . $note3 . "<br><br>";
+	echo $spaces;
 
-	// Check is string
-	echo is_string($note);
+	print_r($letters);
 
-	// Integers
-	$number = 1;
+	echo $spaces;
 
-	// Check integer
-	echo is_integer($number);
+	// Echo array item
+	echo $students[2];
 
-	// Float, decimal numbers
-	$float = 0.4;
+	// Check if array
+	echo is_array($students);
 
-	// Check if float
-	echo is_float($float);
+	echo $spaces;
 
-	// Boolean, true or false
-	$bool = true;
+	// Number of students
+	echo count($students);
 
-	// Check bool
-	echo is_bool($bool);
+	echo $spaces;
 
-	/*
-		Operators
-	*/
-	echo "<br><hr><br><h1>Operators</h1>";
-	// Arithmetic (+, -, *, /, %)
-	// Addition
-	$number1 = 10;
-	$number2 = 15;
+	// Sum array elements
+	echo array_sum($numbers);
 
-	$sum = $number1 + $number2;
-	$substraction = $number1 - $number2;
-	$multiplication = $number1 * $number2;
-	$division = $number1 / $number2;
-	$modulus = $number2 % $number1;
+	// Sort arrays
+	rsort($students);
 
-	// Check if 1 and 2 are equal
-	$equality = $number1 == $number2;
+	print_r($students);
 
-	// Check for inequality
-	$inequality = $number1 != $number2;
+	// Shuffle
+	shuffle($students);
 
-	// Check if greater than
-	$greaterThan = $number1 > $number2;
+	echo $spaces;
 
-	// Check if less than
-	$lessThan = $number1 < $number2;
+	print_r($students);
 
-	// Check if greater than or equal to
-	$greaterThanOrEqualTo = $number1 >= $number2;
+	// Return random element
+	echo $students[array_rand($students)];
 
-	// Check if less than or equal to
-	$lessThanOrEqualTo = $number1 <= $number2;
+	// Check if in array
+	echo in_array("Agba", $students);
+
+	array_unshift($students, "Agba");
+	$students[] = "Agba";
+	$students[] = "Myself";
+
+	echo $spaces;
+
+	print_r($arrays);
+
+	// Return count of each value
+	// print_r(array_count_values($students));
+
+	echo $spaces;
+
+	// Print unique value
+	print_r(array_unique($students));
+
+	// Array differences
+	$fruits_a = ["Apple", "Mango", "Banana"];
+	$fruits_b = ["Sugar", "Mango"];
+
+	echo $spaces;
+
+	print_r(array_reverse(array_diff($fruits_a, $fruits_b)));
 ?>
