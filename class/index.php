@@ -1,98 +1,106 @@
 <?php
-
-	// To output data
-	echo "Hello World! <br>";
-
-	// Comments
-	// Single-line comments
-	# Single-line comments
-	/*
-		Name: Application
-		Function: To process all payments in the app
-	*/	
-
-	// Variables
+	
+	// General variables
+	$age = '';
+	$adultAge = 23;
 	$name = "Zubair";
+	$password = "mango32";
+	$fakePassword = 435679;
 
-	$Zubair = "Test <br><br>";
+	// Control Structures
+	// If
+	if ($age) { ?>
+			
+			<!-- <html>
+				<head>
+					<title>My first page</title>
+				</head>
+				<body>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt facilis a corporis qui, repudiandae perferendis fugit impedit nemo quasi ullam, aut deleniti laboriosam harum cum debitis doloribus dolorum ipsa fuga!</p>
+				</body>
+			</html> -->
+		<?php
+	}
 
-	// $name = "Kunle";
+	// Using ternary if
+	echo $age ? $age : "No age";
 
-	// Variable variables
-	$anotherName = $$name;
+	// Else
+	// if (strlen($password) >= 8) {
+	// 	echo "Password is good";
+	// } else {
+	// 	echo "Invalid password";
+	// };
 
-	// Outputting variables
-	echo $anotherName;
+	$number = 32;
 
-	// Constant
-	define('RATE', 0.2);
+	// Elseif
+	// if ($number < 10) {
+	// 	echo "Number less than 10";
+	// } elseif ($number > 10 && $number < 20) {
+	// 	echo "Number between 10 and 20";
+	// } elseif ($number > 20 && $number % 3 == 0) {
+	// 	echo "Number greater than 20 and is a multiple of 3";
+	// } else {
+	// 	echo "Number doesn't match any thing";
+	// }
+	
 
-	// No redefining constants
-	// RATE = 0.4;
+	// isset(var)
+	// if (isset($age)) {
+	// 	echo "<!DOCTYPE html>
+	// 	<html>
+	// 	<head>
+	// 		<title>Age is set</title>
+	// 	</head>
+	// 	<body>
+	// 		<p>Lorem jsdvhsdjkvsdjk sdgyusdhgdu sdvsduhvsd</p>
+	// 	</body>
+	// 	</html>";
+	// }
+	// is_null(var)
 
-	/*
-		DATA TYPES
-	*/
-	// Strings
-	$note = "I love you";
-	$note2 = 'I love you too';
-	$note3 = '3';
+	// if (!is_null($age)) {
+	// 	echo "<!DOCTYPE html>
+	// 	<html>
+	// 	<head>
+	// 		<title>Age is not null</title>
+	// 	</head>
+	// 	<body>
+	// 		<p>lorem test jksdgisd gyudguksd ugsdugys</p>
+	// 	</body>
+	// 	</html>";
+	// }
 
-	// String concatenation
-	echo "Bola said: " . $note . ". Then Tayo replied: " . 
-		$note2 . " " . $note3 . "<br><br>";
+	//!
+	// if (!$age) {
+	// 	echo "No age set";
+	// }
 
-	// Check is string
-	echo is_string($note);
+	// Boolean logic
+	// And &&
+	// true x true = true
+	// true x false = false
+	// if ($age && $adultAge) {
+	// 	echo "Both are set";
+	// }
 
-	// Integers
-	$number = 1;
+	// Or ||
+	// if ($age || $adultAge) {
+	// 	echo "<br>oNE IS SET";
+	// }
 
-	// Check integer
-	echo is_integer($number);
-
-	// Float, decimal numbers
-	$float = 0.4;
-
-	// Check if float
-	echo is_float($float);
-
-	// Boolean, true or false
-	$bool = true;
-
-	// Check bool
-	echo is_bool($bool);
-
-	/*
-		Operators
-	*/
-	echo "<br><hr><br><h1>Operators</h1>";
-	// Arithmetic (+, -, *, /, %)
-	// Addition
-	$number1 = 10;
-	$number2 = 15;
-
-	$sum = $number1 + $number2;
-	$substraction = $number1 - $number2;
-	$multiplication = $number1 * $number2;
-	$division = $number1 / $number2;
-	$modulus = $number2 % $number1;
-
-	// Check if 1 and 2 are equal
-	$equality = $number1 == $number2;
-
-	// Check for inequality
-	$inequality = $number1 != $number2;
-
-	// Check if greater than
-	$greaterThan = $number1 > $number2;
-
-	// Check if less than
-	$lessThan = $number1 < $number2;
-
-	// Check if greater than or equal to
-	$greaterThanOrEqualTo = $number1 >= $number2;
-
-	// Check if less than or equal to
-	$lessThanOrEqualTo = $number1 <= $number2;
+	// Make login form
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ternary test</title>
+</head>
+<body>
+	<h1>Hello <?php echo $password ? "Logged In" : "Login" ?></h1>
+</body>
+</html>
