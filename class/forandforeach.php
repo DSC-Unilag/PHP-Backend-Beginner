@@ -5,9 +5,9 @@
 	// print_r($letters);
 
 	// For loop
-	// for ($counter = 0; $counter < 10; $counter++) { 
-	// 	echo $counter;
-	// }
+	for ($counter = 0; $counter < 10; $counter++) { 
+		echo $counter . "<br>";
+	}
 
 	// Foreach loop
 	foreach ($letters as $index => $letter) {

@@ -6,10 +6,13 @@
 
 	// While
 	// while ($students) {
-	// 	echo $students[count($students) - 1];
 
-	// 	array_pop($students);
-	// }
+    //Echo last item
+	   // echo $students[count($students) - 1];
+
+    //Remove last item
+		//array_pop($students);
+	//}
 
 ?>
 
@@ -34,11 +37,17 @@
     			"I don't like rice",
     			"lorem dsdsdhdh"
     		];
-    		while(count($x) > 31)  {
-    			$current = $x[0];
-    			echo "<li>" . $current . "</li>";
-    			array_shift($x);
-    		}
+    		// while(count($x))  {
+
+      //           // First item
+    		// 	$current = $x[0];
+
+      //           // Echo the first item
+    		// 	echo "<li>" . $current . "</li>";
+
+      //           // Remove the first item
+    		// 	array_shift($x);
+    		// }
     	?>
     </ul>
 
